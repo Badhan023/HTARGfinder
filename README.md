@@ -6,7 +6,7 @@ HTARGfinder (Horizontally Transferred Antibiotic Resistant Genes finder) is a pi
 2. ~350GB space for GTDB-tk (https://ecogenomics.github.io/GTDBTk/installing/index.html)
 
 **Installation**
-Follow the commands below:
+
 ```
 conda create -n htargfinder -c conda-forge -c bioconda gtdbtk=1.3.0
 conda activate htargfinder
