@@ -1,5 +1,5 @@
-# HTARGfinder
-HTARGfinder (Horizontally Transferred Antibiotic Resistant Genes finder) a pipeline that detects and enumerates horizontally transferred ARGs in metagenomic data while also estimating the directionality of transfer.
+# HT-ARGfinder
+HT-ARGfinder (Horizontally Transferred Antibiotic Resistant Genes finder) a pipeline that detects and enumerates horizontally transferred ARGs in metagenomic data while also estimating the directionality of transfer.
 
 **Requirements**
 1. Conda environment
