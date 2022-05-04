@@ -14,6 +14,8 @@ cd HTARGfinder
 ./setup.sh
 ```
 The setup.sh will take ~4 hours for GTDB-tk.
+
+
 **Running HT-ARGfinder**
 ```sh
 bash pipeline.sh sample sample_read1.fq sample_read2.fq   #1 paired-end library in fastq format
