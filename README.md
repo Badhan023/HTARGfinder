@@ -20,7 +20,7 @@ bash pipeline.sh sample sample_read1.fq sample_read2.fq   #1 paired-end library 
 ```
 
 Here, 
-sample is the desired prefix of the intermediate and output files,
+**sample** is the desired prefix of the intermediate and output files,
 sample_read1.fq and sample_read2.fq are the paired-end reads as inputs.
 
 
