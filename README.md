@@ -8,9 +8,9 @@ HT-ARGfinder (Horizontally Transferred Antibiotic Resistant Genes finder) a pipe
 **Installation**
 
 ```
+git clone https://github.com/Badhan023/HTARGfinder.git
 conda create -n htargfinder -c conda-forge -c bioconda gtdbtk=1.3.0
 conda activate htargfinder
-git clone https://github.com/Badhan023/HTARGfinder.git
 cd HTARGfinder
 ./setup.sh
 ```
