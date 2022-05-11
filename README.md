@@ -33,4 +33,5 @@ sample_read1.fq and sample_read2.fq are the paired-end reads as inputs.
 
 1. sample_HTARGs_DeepARG-DB.csv (horizontally transferred ARG-list with donor & recepient information according to DeepARG-DB)
 2. sample_HTARGs_CARD.csv (horizontally transferred ARG-list with donor & recepient information according to CARD)
-
+3. sample_HTARGs_DeepARG-DB.csv (ARG matches running DIAMOND(blastx) against DeepARG-DB)
+4. sample_HTARGs_CARD.csv (ARG matches running DIAMOND(blastx) against CARD)
