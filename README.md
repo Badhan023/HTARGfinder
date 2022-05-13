@@ -21,19 +21,28 @@ The setup.sh will take ~4 hours for GTDB-tk.
 
 Activate the conda for this tool, i.e., **htargfinder** in this case, before running the pipeline.
 ```sh
-bash pipeline.sh sample sample_read1.fq sample_read2.fq   #1 paired-end library in fastq format
+bash pipeline.sh sample sample_read1.fq sample_read2.fq database   #1 paired-end library in fastq format
 ```
 
 Here, 
 **sample** is the desired prefix of the intermediate and output files,
-sample_read1.fq and sample_read2.fq are the paired-end reads as inputs.
+**sample_read1.fq** and **sample_read2.fq** are the paired-end reads as inputs.
+**database** is the ARG database prefix. Currently there are two options for this argument: **CARD**, and **DeepARG**.
 
 
 **Outputs**
 
-1. sample_HTARGs_DeepARG-DB.csv (horizontally transferred ARG-list with donor & recepient information according to DeepARG-DB)
-2. sample_HTARGs_CARD.csv (horizontally transferred ARG-list with donor & recepient information according to CARD)
-3. sample_HTARGs_DeepARG-DB.csv (ARG matches running DIAMOND(blastx) against DeepARG-DB)
-4. sample_HTARGs_CARD.csv (ARG matches running DIAMOND(blastx) against CARD)
-5. sample_taxonomy_DeepARG-DB.csv (taxonomic information of the bins associated with horizontally transferred ARGs according to DeepARG-DB)
-6. sample_taxonomy_CARD.csv (taxonomic information of the bins associated with horizontally transferred ARGs according to CARD)
+1. sample_HTARGs_database.csv (horizontally transferred ARG-list with donor & recepient information according to the ARG database selected)
+2. sample_diamond_out_default_database.csv (ARG matches running DIAMOND against the ARG database selected)
+3. sample_taxonomy_DeepARG-DB.csv (taxonomic information of the bins associated with horizontally transferred ARGs according to the ARG database selected)
+
+
+**Database Options**
+User can add another database, for example **newdb.fa** in this pipeline by simple running the following command.
+```sh
+diamond makedb --in newdb.fa -d reference_newdb
+```
+When the database is ready to use, user can simply use **newdb** as the fourth argument of pipeline.sh as another option for ARG database. For example,
+```sh
+bash pipeline.sh sample sample_read1.fq sample_read2.fq newdb
+```
