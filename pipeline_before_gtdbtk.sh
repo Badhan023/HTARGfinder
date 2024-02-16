@@ -46,7 +46,7 @@ filename=$(basename -- "${var[0]}")
 extension="${filename##*.}"
 
 ##checkm-genome
-checkm lineage_wf --tab_table --file ${1}_checkm.csv -t 8 -x $extension ${1}_bins_dir ${1}_chechm_bins_dir
+checkm lineage_wf --tab_table --file ${1}_checkm.csv -t 8 -x $extension ${1}_bins_dir ${1}_checkm_bins_dir
 echo "checkm-genome done"
 
 ##filtering
